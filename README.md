@@ -5,5 +5,3 @@ This project aims to reproduce plots from the study titled _Ischemia-reperfusion
 ## Dataset Description
 The dataset was obtained from the NCBI GEO Database with accession key: GSE220797. Biopsies were performed on the donor lungs of 6 patients at two timepoints 1) at the end of cold preservation and 2) two hours after reperfusion. Thus, the dataset contains 12 samples in total (6 from each timepoint).
 
-## Loading the Data
-
