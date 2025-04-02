@@ -6,7 +6,7 @@ for i in {1..6}; do
     # decompress and move it into the corresponding folder
     gunzip -c "$file" > "patient${i}_cit/$base_name"
   done
-
+  
   # extract 2hr files (barcodes, features, matrix for 2hr)
   for file in GSM682*patient_${i}_2hr*.tsv.gz GSM682*patient_${i}_2hr*.mtx.gz; do
     # extract the base filename without the .gz extension
@@ -22,7 +22,6 @@ for i in {1..6}; do
   for dir in "patient${i}_cit" "patient${i}_2hr"; do
     # change to the directory
     cd "$dir"
-
     # rename files inside the directory
     mv GSM6820*patient_${i}_cit_barcodes.tsv barcodes.tsv
     mv GSM6820*patient_${i}_cit_matrix.mtx matrix.mtx
