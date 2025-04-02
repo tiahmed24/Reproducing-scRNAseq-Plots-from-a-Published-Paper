@@ -16,7 +16,7 @@ for i in {1..6}; do
   done
 done
 
-# loop through patient directories (e.g., patient1_cit, patient1_2hr, etc.)
+# loop through patient directories
 for i in {1..6}; do
   # loop through each directory (cit and 2hr)
   for dir in "patient${i}_cit" "patient${i}_2hr"; do
